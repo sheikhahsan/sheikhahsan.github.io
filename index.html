@@ -58,7 +58,7 @@
                         <div class="col-lg-8 text-lg-left text-md-center align-self-center mt-3 mt-lg-0">
                             <span class="hi">Hey, I'm</span>
                             <h1>Ahsan Yousaf</h1>
-                            <h5 class="font-weight-bold">I'm a Front-end Developer</h5>
+                            <h5 class="font-weight-bold">I'm a <span id="typed-title"></span></h5>
                             <p>based in Lahore, Pakistan</p>
                             <div class="d-lg-flex flex-lg-row flex-md-column justify-content-lg-end">
                                 <span class="mr-0 mr-lg-2">If you’d like to get in touch</span>
@@ -109,7 +109,8 @@
                 </div>
             </div>
         </div>
-        
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143832836-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -118,6 +119,17 @@
 
             gtag('config', 'UA-143832836-1');
         </script>
-
+        <script>
+            var typed = new Typed('#typed-title', {
+                strings: [
+                    'front-end developer',
+                    'software engineer',
+                    'problem solver'
+                ],
+                typeSpeed: 50,
+                loop: true,
+                backDelay: 2000
+            });
+        </script>
     </body>
 <html/>
